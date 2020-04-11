@@ -1,0 +1,78 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ride the bike, live  your life!</title>
+  <meta name="description" content="An image crossfade animation done with CSS3">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.component.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<!--</head>-->
+<header>
+<!--<body>-->
+<div class="crossfade">
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+</div>
+
+<div class="image-box__content">
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <h1 style=font-size:50px align="center" >Ride the bike, live  your life!</h1>
+</div>
+
+<div style="background-color:#FFFFFF;">
+  <nav class="navbar navbar-expand-md navbar-custom">
+    <!-- Brand -->
+    <a [routerLink]="['/']" class="navbar-brand" data-text="Home">Home</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="/info" class="nav-link" data-text="Info">Info</a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/products" class="nav-link" data-text="Products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/contacts" class="nav-link" data-text="Contacts">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+<header>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <section class="test" >
+    <h1 align="center">About us</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 bg-transparent">
+          <h2 align="center">Our contacts:</h2>
+          <p align="center">tel: +373 123 45 678</p>
+          <p align="center">e-mail: abcdefg@gmail.com</p>
+        </div>
+        <div class="col-md-6 bg-transparent">
+          <h2 align="center">Follow us:</h2>
+          <p align="center"><img src="../assets/img/fb-removebg-preview.png" height="42" width="43">Our group on Facebook</p>
+          <p align="center"><img src="../assets/img/yt-removebg-preview.png" height="32" width="40">Our YouTube chanel</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <h4 align="center">You have been navigating our site for:
+      <cd-timer class="bootstrap-timer" format="user">[hours] hours [minutes] minutes [seconds] seconds</cd-timer>
+    </h4>
+  </section>
+</footer>

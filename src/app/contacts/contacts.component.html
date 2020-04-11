@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" href="contacts.component.css">
+</head>
+<br>
+<h1>If you have any questions, please leave us a message.</h1>
+<br>
+<div align="center">
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <input type = "text" minlength="2" maxlength="20" name = "fullName" placeholder = "Name" ngModel>
+
+  <br/>
+
+  <input type = "email" name = "email" class="form-control" placeholder = "E-Mail" ngModel>
+
+  <br/>
+
+  <textarea name = "message" maxlength="100" placeholder = "Your message" ngModel></textarea>
+  <br/>
+  <input type = "submit" value = "Send">
+</form>
+</div>
+<br>
