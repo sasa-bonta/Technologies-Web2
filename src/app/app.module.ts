@@ -4,6 +4,7 @@ import { CdTimerModule } from 'angular-cd-timer';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -16,6 +17,7 @@ import { ProductsComponent } from './products/products.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MtbComponent } from './mtb/mtb.component';
 import { RoadComponent } from './road/road.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { RoadComponent } from './road/road.component';
     ProductsComponent,
     ContactsComponent,
     MtbComponent,
-    RoadComponent
+    RoadComponent,
+    MessagesComponent
   ],
     imports: [
         BrowserModule,
@@ -34,7 +37,8 @@ import { RoadComponent } from './road/road.component';
         CdTimerModule,
         YouTubePlayerModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

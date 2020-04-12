@@ -17,7 +17,9 @@ export class ContactsComponent implements OnInit {
     console.log('Your form data : ', form.value );
   }
 
-  form = new FormGroup({
-    name: new FormControl('', Validators.required)
-  })
+  mesForm = new FormGroup({
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required)
+  });
 }

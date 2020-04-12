@@ -6,17 +6,20 @@
 <br>
 <div align="center">
 <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
-  <input type = "text" minlength="2" maxlength="20" name = "fullName" placeholder = "Name" ngModel>
+  <input type = "text" minlength="2" maxlength="20" name = "name" placeholder = "Name" ngModel>
 
   <br/>
 
-  <input type = "email" name = "email" class="form-control" placeholder = "E-Mail" ngModel>
+  <input type = "email" maxlength="30" name = "email" class="form-control" placeholder = "E-Mail" ngModel>
 
   <br/>
 
-  <textarea name = "message" maxlength="100" placeholder = "Your message" ngModel></textarea>
+  <textarea name = "message" maxlength="255" placeholder = "Your message" ngModel></textarea>
   <br/>
   <input type = "submit" value = "Send">
 </form>
 </div>
 <br>
+
+<h1>Recent messages</h1>
+<app-messages></app-messages>
