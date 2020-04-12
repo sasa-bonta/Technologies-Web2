@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessagesService} from '../messages.service';
 import { Messages} from '../messages';
-import {NgForm} from '@angular/forms';
 import { Router} from '@angular/router';
 
 @Component({

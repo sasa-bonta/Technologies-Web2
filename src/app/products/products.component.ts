@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Products} from '../products';
 import { ProductsService} from '../products.service';
 import {Router} from '@angular/router';
-import {Messages} from '../messages';
-import {MessagesService} from '../messages.service';
 
 @Component({
   selector: 'app-products',
