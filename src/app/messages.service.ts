@@ -16,4 +16,8 @@ export class MessagesService {
   deleteMessage(messages: Messages) {
     return this.http.delete<Messages[]>('http://localhost/Technilogies-Web2/messdel.php?id=' + messages.id);
   }
+
+  addMessage (message: Messages) {
+    return this.http.post('http://localhost/Technilogies-Web2/messadd.php', message);
+  }
 }

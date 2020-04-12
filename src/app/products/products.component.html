@@ -1,1 +1,33 @@
-<p>products works!</p>
+<h1 align="center">List of products</h1>
+
+<div class="row std-list">
+  <div class="col-sm-2 bg-transparent">
+    <h2 align="center">ID:</h2>
+  </div>
+  <div class="col-sm-4 bg-transparent">
+    <h2>Name Of Product:</h2>
+  </div >
+  <div class="col-sm-4 bg-transparent">
+    <h2>Description:</h2>
+  </div>
+  <div class="col-sm-2 bg-transparent">
+    <h2>Price:</h2>
+  </div>
+
+</div>
+
+<div class="row std-list" *ngFor="let pr of products">
+  <div class="col-sm-2 bg-transparent">
+    <p align="center">{{pr.id}}</p>
+  </div>
+  <div class="col-sm-4 bg-transparent">
+    {{pr.name}}
+  </div >
+  <div class="col-sm-4 bg-transparent">
+    {{pr.description}}
+  </div>
+  <div class="col-sm-2 bg-transparent">
+    {{pr.price}}
+  </div>
+  <div><br><br></div>
+</div>

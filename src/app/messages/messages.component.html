@@ -1,8 +1,8 @@
-
+<h1>Recent messages</h1>
 
 <div class="row std-list">
   <div class="col-sm-1 bg-transparent">
-    <h2>ID:</h2>
+    <h2 align="center">ID:</h2>
   </div>
   <div class="col-sm-2 bg-transparent">
     <h2>Name:</h2>
@@ -13,17 +13,14 @@
   <div class="col-sm-4 bg-transparent">
     <h2>Message</h2>
   </div>
-  <div class="col-sm-1 bg-transparent">
-    <h2>Edit</h2>
-  </div>
-  <div class="col-sm-1 bg-transparent">
+  <div class="col-sm-2 bg-transparent">
     <h2>Delete</h2>
   </div>
 </div>
 
 <div class="row std-list" *ngFor="let mes of messages">
   <div class="col-sm-1 bg-transparent">
-    {{mes.id}}
+    <p align="center">{{mes.id}}</p>
   </div>
   <div class="col-sm-2 bg-transparent">
     {{mes.name}}
@@ -34,10 +31,8 @@
   <div class="col-sm-4 bg-transparent">
     {{mes.message}}
   </div>
-  <div class="col-sm-1 bg-transparent">
-    <a href=""class="btn btn-success">Edit</a>
-  </div>
-  <div class="col-sm-1 bg-transparent">
+  <div class="col-sm-2 bg-transparent">
     <a class="btn btn-danger" href="http://localhost/Technilogies-Web2/messdel.php?id={{mes.id}}">Delete</a>
   </div>
+  <div><br><br></div>
 </div>
